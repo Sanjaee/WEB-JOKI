@@ -6,7 +6,7 @@ function ThumbnailVideo({ onClick }) {
       <img
         src="thumnel.png"
         alt="Video Thumbnail"
-        className=" w-[600px] h-[400px] rounded-xl mt-20"
+        className="w-full md:w-[800px] h-[200px] md:h-[400px] rounded-xl mt-14"
         onClick={onClick}
         style={{ cursor: "pointer" }}
       />
@@ -17,11 +17,14 @@ function ThumbnailVideo({ onClick }) {
 function FullVideo({ onBack }) {
   return (
     <div>
-      <video controls className="w-[600px] h-[400px] rounded-xl">
+      <video
+        controls
+        className="w-full md:w-[800px] h-[200px] md:h-[400px] rounded-xl mt-14"
+      >
         <source src="AtengJoki.mp4" type="video/mp4" className="rounded-xl" />
       </video>
       <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mx-auto block mt-4"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mx-auto block mt-11 "
         onClick={onBack}
       >
         Berhenti Menonton
@@ -44,7 +47,7 @@ export default function Tutorial() {
   return (
     <div>
       <h1 className="text-center font-bold text-4xl mt-20">Cara Pemesanan</h1>
-      <div className="justify-center items-center flex mb-10">
+      <div className="justify-center items-center flex ">
         {showFullVideo ? (
           <FullVideo onBack={handleBackToThumbnail} />
         ) : (

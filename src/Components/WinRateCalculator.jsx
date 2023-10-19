@@ -1,6 +1,7 @@
 import Navigasi from "./Navigasi";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 class WinRateCalculator extends Component {
   constructor() {
@@ -48,15 +49,14 @@ class WinRateCalculator extends Component {
     this.setState({ matchesNeeded, showResult: true });
   };
 
-  
   render() {
     const { showResult, matchesNeeded, desiredWinRate } = this.state;
     return (
       <div>
         <Navigasi />
-        <div className="flex justify-center items-center bg-opacity-50 h-screen bg-blue-gray-400">
+        <div className="flex justify-center items-center bg-opacity-50 h-screen bg-gray-200">
           <div
-            className="bg-gray-100 p-4 rounded-xl shadow-xl"
+            className="bg-gray-50 p-4 rounded-xl shadow-xl"
             style={{ width: "410px", height: "555px" }}
           >
             <h2 className="text-2xl font-bold mb-4">Win Rate Calculator</h2>
@@ -102,10 +102,14 @@ class WinRateCalculator extends Component {
             >
               Hitung
             </button>
-            <Link to={"/buy"}><button className=" bg-green-500 w-full p-3 mt-3 rounded" id="tombol">
-              <p className=" font-bold text-white">Pesan Joki</p>
-
-            </button></Link>
+            <Link to={"/buy"}>
+              <button
+                className=" bg-green-500 w-full p-3 mt-3 rounded"
+                id="tombol"
+              >
+                <p className=" font-bold text-white">Pesan Joki</p>
+              </button>
+            </Link>
             <div>
               {showResult && (
                 <p className="text-lg mt-4">
@@ -118,6 +122,7 @@ class WinRateCalculator extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

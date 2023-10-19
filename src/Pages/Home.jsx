@@ -7,7 +7,7 @@ import Tutorial from "../Components/Tutorial";
 
 const Home = () => {
   return (
-    <div className="bg-gray-200 min-h-screen pb-20">
+    <div className="bg-gray-200 min-h-screen ">
       {/* ini navbar nya */}
       <Navigasi />
       {/* ini selesai navbar nya */}

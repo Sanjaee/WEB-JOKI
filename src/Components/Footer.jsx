@@ -24,7 +24,7 @@ export default function Footer() {
           </div>
           <div>
             <i className="fa fa-phone"></i>
-            <p>+62 077-777-77</p>
+            <p>+62 877-6516-5143</p>
           </div>
           <div>
             <i className="fa fa-envelope"></i>
@@ -43,17 +43,15 @@ export default function Footer() {
 
           <div className="footer-media">
             {/* Gantilah <a> dengan tautan sesuai dengan media sosial Anda */}
-            <a href="#">
-              <i className="fa fa-youtube"></i>
+            <a href="https://www.tiktok.com/@ahmadafriza25">
+              <i>
+                <img src="tik-tok.png" alt="" />
+              </i>
             </a>
-            <a href="#">
-              <i className="fa fa-facebook"></i>
-            </a>
-            <a href="#">
-              <i className="fa fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i className="fa fa-instagram"></i>
+            <a href="https://www.instagram.com/atengjoki_">
+              <i>
+                <img src="instagram.png" alt="" />
+              </i>
             </a>
           </div>
         </div>

@@ -71,7 +71,7 @@ const Payment = () => {
       <div>
         <Navigasi />
       </div>
-      <div className=" justify-end items-end flex mt-3 mr-2 pb-16">
+      <div className=" justify-end items-end flex mt-3 mr-2 ">
         {isPopupVisible && <PopUp />}
       </div>
 

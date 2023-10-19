@@ -32,7 +32,7 @@ const Store = () => {
   };
 
   const filteredStores = stores.filter((store) =>
-    store.name.toLowerCase().includes(searchKeyword.toLowerCase())
+    store?.name?.toLowerCase().includes(searchKeyword.toLowerCase())
   );
 
   return (
@@ -74,13 +74,13 @@ const Store = () => {
               <div className="store-card-inner">
                 <img
                   src={store.image}
-                  alt={store.name}
+                  alt={store.title}
                   className="store-card-image rounded-xl w52"
                 />
 
                 <div className="store-card-details">
                   <h2 className="store-card-title">{store.name}</h2>
-                  <p className="store-card-description">Moonton</p>
+                  <p className="store-card-description">{store.title}</p>
                   <p className="store-card-price">
                     {formatCurrency(store.harga)}
                   </p>

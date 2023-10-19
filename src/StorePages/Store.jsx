@@ -66,11 +66,10 @@ const Store = () => {
             onChange={handleSearchChange}
           />
         </div>
-        {/* value={searchKeyword}
-            onChange={handleSearchChange} */}
+
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {filteredStores.map((store, index) => (
-            <Link key={index} to="/Buy" className="store-card">
+            <Link to="/Buy" key={index} className="store-card">
               <div className="store-card-inner">
                 <img
                   src={store.image}

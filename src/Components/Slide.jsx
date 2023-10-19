@@ -55,7 +55,7 @@ export default function Slide() {
   return (
     <div className="flex items-center justify-center">
       <div
-        className="mt-28 max-w-screen-lg mx-auto"
+        className="mt-9 max-w-screen-lg mx-auto"
         style={{ overflow: "hidden" }}
       >
         {isLoading ? (

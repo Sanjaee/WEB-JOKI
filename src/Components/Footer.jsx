@@ -12,7 +12,7 @@ export default function Footer() {
             <img className="ml-8" src="gopay.png" alt="" />
             <img src="" alt="" />
           </div>
-          <p className="footer-copyright">2021 AtengJoki</p>
+          <p className="footer-copyright">2023 AtengJoki</p>
         </div>
 
         <div className="footer-center">

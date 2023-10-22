@@ -112,7 +112,6 @@ const Payment = () => {
               >
                 <option value="Joki Gendong">Joki Gendong</option>
                 <option value="Joki Akun">Joki Akun</option>
-                <option value="Joki Clasik">Joki Clasik</option>
               </select>
             </div>
             <div>

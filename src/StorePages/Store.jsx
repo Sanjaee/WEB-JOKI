@@ -67,7 +67,7 @@ const Store = () => {
           />
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {filteredStores.map((store, index) => (
             <Link to="/Buy" key={index} className="store-card">
               <div className="store-card-inner">
@@ -80,9 +80,6 @@ const Store = () => {
                 <div className="store-card-details">
                   <h2 className="store-card-title">{store.name}</h2>
                   <p className="store-card-description">{store.title}</p>
-                  <p className="store-card-price">
-                    {formatCurrency(store.harga)}
-                  </p>
                 </div>
               </div>
             </Link>

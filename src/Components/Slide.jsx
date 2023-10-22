@@ -14,6 +14,8 @@ export default function Slide() {
   const [currentSlide, setCurrentSlide] = useState(0); // Track the current slide index
   const [activeDot, setActiveDot] = useState(0); // Track the active dot index
 
+
+  
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchProductData();

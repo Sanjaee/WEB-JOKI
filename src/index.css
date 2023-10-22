@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.video-iframe {
+  width: 100%;
+  max-width: 400px; /* Atur lebar maksimum video sesuai kebutuhan Anda */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .loader {
   position: relative;
   width: 340px;
@@ -152,6 +159,10 @@ nav li:first-child {
 @media (max-width: 400px) {
   .sidebar {
     width: 100%;
+  }
+  .video-iframe {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

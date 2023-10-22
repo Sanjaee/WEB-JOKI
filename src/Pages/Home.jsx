@@ -3,7 +3,8 @@ import Navigasi from "../Components/Navigasi";
 import Slide from "../Components/Slide";
 import Footer from "../Components/Footer";
 import Store from "../StorePages/Store";
-import Tutorial from "../Components/Tutorial";
+
+import ThumbnailVideo from "../Components/Tutorial";
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
       {/* ini footer nya */}
 
       <div>
-        <Tutorial />
+        <ThumbnailVideo />
       </div>
       <Footer />
       {/* ini selesai footer nya */}
